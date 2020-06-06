@@ -32,7 +32,7 @@
 <div class="bigslam-mobile-header-container bigslam-container">
 <div class="bigslam-logo  bigslam-item-pdlr">
 <div class="bigslam-logo-inner">
-<a href="index.html"><img src=" {% static 'upload/logo-mobile.png ' %}" alt="" width="300" height="109" title="logo-mobile"></a>
+<a href="{% url 'home'%}"><img src=" {% static 'upload/logo-mobile.png ' %}" alt="" width="300" height="109" title="logo-mobile"></a>
 </div>
 </div>
 <div class="bigslam-mobile-menu-right">
@@ -56,23 +56,23 @@
 <div class="bigslam-mobile-menu"><a class="bigslam-mm-menu-button bigslam-mobile-menu-button bigslam-mobile-button-hamburger-with-border" href="#bigslam-mobile-menu"><i class="fa fa-bars"></i></a>
 <div class="bigslam-mm-menu-wrap bigslam-navigation-font" id="bigslam-mobile-menu" data-slide="right">
 
-
+{# menu mobile #}
 <ul id="menu-main-navigation" class="m-menu">
 
 
-    <li class="menu-item menu-item-home current-menu-item"><a href="index.html" aria-current="page">Home</a></li>
+    <li class="menu-item menu-item-home current-menu-item"><a href="{% url 'home' %}" aria-current="page">Accueil</a></li>
 
 
-    <li class="menu-item menu-item-has-children"><a href="schedule-featured-style.html">Programme</a></li>
+    <li class="menu-item menu-item-has-children"><a href="{% url 'game' %}">Programme</a></li>
 
 
-    <li class="menu-item menu-item-has-children"><a href="player-list-default-style.html">Players</a></li>
+    <li class="menu-item"><a href="{% url 'joueur' %}">Joueurs</a></li>
 
 
-    <li class="menu-item "><a href="big-slam.html">Our Team</a></li>
+    <li class="menu-item "><a href="{% url 'equipe' %}">L'equipe</a></li>
 
 
-    <li class="menu-item menu-item-has-children"><a href="#">SportsPress</a>
+    <li class="menu-item menu-item-has-children"><a href="#">Ligue</a>
     <ul class="sub-menu">
         <li class="menu-item menu-item-has-children"><a href="#">Game</a></li>
         <li class="menu-item"><a href="player-list-gallery.html">Player</a></li>
@@ -125,30 +125,24 @@
         <div class="bigslam-header-container-inner clearfix">
             <div class="bigslam-logo  bigslam-item-pdlr">
                 <div class="bigslam-logo-inner">
-                    <a href="index.html"><img src=" {% static 'upload/logo.png ' %}" alt="" width="131" height="160" title="logo"></a>
+                    <a href="{% url 'home'%}"><img src=" {% static 'upload/logo.png ' %}" alt="" width="131" height="160" title="logo"></a>
                 </div>
             </div>
             <div class="bigslam-navigation bigslam-item-pdlr clearfix ">
                 <div class="bigslam-main-menu" id="bigslam-main-menu">
                     <ul id="menu-main-navigation-1" class="sf-menu">
 
-                        <li class="menu-item menu-item-home current-menu-item bigslam-normal-menu"><a href="index.html">Home</a></li>
+                        <li class="menu-item menu-item-home current-menu-item bigslam-normal-menu"><a href="{% url 'home'%}">Home</a></li>
 
 
-                        <li class="menu-item menu-item-has-children bigslam-normal-menu"><a href="schedule-featured-style.html" class="sf-with-ul-pre">Schedule</a></li>
+                        <li class="menu-item bigslam-normal-menu"><a href="{% url 'game'%}" class="sf-with-ul-pre">Schedule</a></li>
 
-                        <li class="menu-item bigslam-normal-menu"><a href="player-list-gallery.html" class="sf-with-ul-pre">Players</a></li>
+                        <li class="menu-item bigslam-normal-menu"><a href="{% url 'joueur'%}" class="sf-with-ul-pre">Players</a></li>
+
+                        <li class="menu-item  bigslam-normal-menu"><a href="{% url 'equipe' %}">L'équipe</a></li>
 
 
-                        <li class="menu-item  bigslam-normal-menu"><a href="big-slam.html">Our Team</a></li>
-
-
-                        <li class="menu-item menu-item-has-children bigslam-normal-menu"><a href="#" class="sf-with-ul-pre">SportsPress</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#" class="sf-with-ul-pre">Game</a></li>
-                                <li class="menu-item" data-size="60"><a href="league-table.html">League Table</a></li>
-                            </ul>
-                        </li>
+                        <li class="menu-item menu-item-has-children bigslam-normal-menu"><a href="{% url 'league' %}" class="sf-with-ul-pre">Ligue</a></li>
 
                         <li class="menu-item menu-item-has-children bigslam-normal-menu"><a href="#" class="sf-with-ul-pre">Pages</a>
                             <ul class="sub-menu">
@@ -298,7 +292,7 @@
             </div>
             <div class="bigslam-copyright-wrapper">
                 <div class="bigslam-copyright-container bigslam-container clearfix">
-                    <div class="bigslam-copyright-left bigslam-item-pdlr"><a href="index.html" style="margin-right: 30px;">Home</a><a href="#" style="margin-right: 30px;">About</a><a href="#" style="margin-right: 30px;">News</a><a href="#">Contact </a></div>
+                    <div class="bigslam-copyright-left bigslam-item-pdlr"><a href="{% url 'home'%}" style="margin-right: 30px;">Home</a><a href="#" style="margin-right: 30px;">About</a><a href="#" style="margin-right: 30px;">News</a><a href="#">Contact </a></div>
                     <div class="bigslam-copyright-right bigslam-item-pdlr">Copyright 2019 Max Themes, All Right Reserved</div>
                 </div>
             </div>

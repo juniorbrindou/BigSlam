@@ -5,5 +5,5 @@ from equipe import views
 
 
 urlpatterns = [
-    path('equipe', views.index, name='equipe'),
+    path('', views.index, name='equipe'),
 ]

@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'equipe.apps.EquipeConfig',
     'home.apps.HomeConfig',
     'blog.apps.BlogConfig'
+    'league.apps.LeagueConfig'
 ]
 
 MIDDLEWARE = [
