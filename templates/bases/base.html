@@ -1,11 +1,12 @@
 {% load static %}
+<!DOCTYPE html>
 <html lang="en-US" class="no-js">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Big Slam &#8211; Basketball Club</title>
+    <title>Big Slam &#8211; Sport Club HTML Template</title>
 
     <link rel='stylesheet' href="{% static 'plugins/goodlayers-core/plugins/fontawesome/font-awesome.css' %}" type='text/css' media='all'>
     <link rel='stylesheet' href="{% static 'plugins/goodlayers-core/plugins/elegant/elegant-font.css' %}" type='text/css' media='all'>
@@ -14,25 +15,25 @@
     <link rel='stylesheet' href="{% static 'plugins/revslider/public/assets/css/rs6.css' %}" type='text/css' media='all'>
     <link rel='stylesheet' href="{% static 'plugins/sportspress/assets/css/sportspress.css' %}" type='text/css' media='all'>
     <link rel='stylesheet' href="{% static 'plugins/sportspress/assets/css/icons.css' %}" type='text/css' media='all'>
-    <link rel='stylesheet' href="{% static 'css/style-core.css' type='text/css' %}" media='all'>
+    <link rel='stylesheet' href="{% static 'css/style-core.css' %}" type='text/css' media='all'>
     <link rel='stylesheet' href="{% static 'css/bigslam-style-custom.css' %}" type='text/css' media='all'>
     <link rel='stylesheet' href="{% static 'plugins/google-map-plugin/assets/css/frontend.css' %}" type='text/css' media='all'>
 
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Condensed%3A300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%7CRoboto%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic%7CMerriweather%3A300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic%7CLora%3Aregular%2Citalic%2C700%2C700italic&subset=cyrillic-ext%2Cvietnamese%2Clatin%2Ccyrillic%2Cgreek-ext%2Clatin-ext%2Cgreek&ver=5.3' type='text/css' media='all'>
 
+
+
 </head>
 
-<body data-rsssl="1" class="page-template-default page page-id-4648 theme-bigslam gdlr-core-body woocommerce-no-js bigslam-body bigslam-body-front bigslam-full  bigslam-with-sticky-navigation  bigslam-sticky-navigation-no-logo gdlr-core-link-to-lightbox">
-
+<body data-rsssl="1" class="home page-template-default page page-id-2039 theme-bigslam gdlr-core-body woocommerce-no-js bigslam-body bigslam-body-front bigslam-full  bigslam-with-sticky-navigation  bigslam-sticky-navigation-no-logo gdlr-core-link-to-lightbox">
     <div class="bigslam-mobile-header-wrap">
         <div class="bigslam-mobile-header bigslam-header-background bigslam-style-slide" id="bigslam-mobile-header">
             <div class="bigslam-mobile-header-container bigslam-container">
                 <div class="bigslam-logo  bigslam-item-pdlr">
                     <div class="bigslam-logo-inner">
-                        <a href="index.html"><img src="upload/logo-mobile.png" alt="" width="300" height="109" title="logo-mobile"></a>
+                        <a href="index.html"><img src=" {% static 'upload/logo-mobile.png ' %}" alt="" width="300" height="109" title="logo-mobile"></a>
                     </div>
                 </div>
-
                 <div class="bigslam-mobile-menu-right">
                     <div class="bigslam-main-menu-search" id="bigslam-mobile-top-search"><i class="fa fa-search"></i></div>
                     <div class="bigslam-top-search-wrap">
@@ -232,12 +233,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-
-    <div class="bigslam-body-outer-wrapper">
+    <div class="bigslam-body-outer-wrapper ">
         <div class="bigslam-body-wrapper clearfix  bigslam-with-transparent-header bigslam-with-frame">
             <div class="bigslam-header-background-transparent">
                 <div class="bigslam-top-bar">
@@ -252,7 +251,6 @@
                         </div>
                     </div>
                 </div>
-
                 <header class="bigslam-header-wrap bigslam-header-style-plain  bigslam-style-menu-right bigslam-sticky-navigation bigslam-style-slide">
                     <div class="bigslam-header-background"></div>
                     <div class="bigslam-header-container  bigslam-header-full">
@@ -260,13 +258,13 @@
                         <div class="bigslam-header-container-inner clearfix">
                             <div class="bigslam-logo  bigslam-item-pdlr">
                                 <div class="bigslam-logo-inner">
-                                    <a href="index.html"><img src="{% static 'upload/logo.png %}" alt="" width="131" height="160" title="logo"></a>
+                                    <a href="index.html"><img src=" {% static 'upload/logo.png ' %}" alt="" width="131" height="160" title="logo"></a>
                                 </div>
                             </div>
                             <div class="bigslam-navigation bigslam-item-pdlr clearfix ">
                                 <div class="bigslam-main-menu" id="bigslam-main-menu">
                                     <ul id="menu-main-navigation-1" class="sf-menu">
-                                        <li class="menu-item menu-item-home bigslam-normal-menu"><a href="index.html">Home</a></li>
+                                        <li class="menu-item menu-item-home current-menu-item bigslam-normal-menu"><a href="index.html">Home</a></li>
                                         <li class="menu-item menu-item-has-children bigslam-normal-menu"><a href="schedule.html" class="sf-with-ul-pre">Schedule</a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item" data-size="60"><a href="schedule.html">Schedule – Default Style</a></li>
@@ -275,7 +273,7 @@
                                                 <li class="menu-item" data-size="60"><a href="schedule-widget-style.html">Schedule – Widget Style</a></li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item menu-item-has-children  bigslam-normal-menu"><a href="player-list-default-style.html" class="sf-with-ul-pre">Players</a>
+                                        <li class="menu-item menu-item-has-children bigslam-normal-menu"><a href="player-list-default-style.html" class="sf-with-ul-pre">Players</a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item" data-size="60"><a href="player-list-default-style.html">Player List – Default Style</a></li>
                                                 <li class="menu-item" data-size="60"><a href="player-list-gallery.html">Player List – Gallery</a></li>
@@ -308,7 +306,7 @@
                                                 <li class="menu-item" data-size="60"><a href="league-table.html">League Table</a></li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item menu-item-has-children current-menu-item bigslam-normal-menu"><a href="#" class="sf-with-ul-pre">Pages</a>
+                                        <li class="menu-item menu-item-has-children bigslam-normal-menu"><a href="#" class="sf-with-ul-pre">Pages</a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item menu-item-has-children" data-size="60"><a href="#" class="sf-with-ul-pre">About</a>
                                                     <ul class="sub-menu">
@@ -477,6 +475,352 @@
             </div>
 
 
+
+
+
+
+
+
 {% block content %}
 	
 {% endblock %}
+
+
+
+
+
+
+            <footer>
+                <div class="bigslam-footer-wrapper">
+                    <div class="bigslam-footer-container bigslam-container clearfix">
+                        <div class="bigslam-footer-column bigslam-item-pdlr bigslam-column-15">
+                            <div id="text-2" class="widget widget_text bigslam-widget">
+                                <h3 class="bigslam-widget-title">Contact Info</h3>
+                                <div class="textwidget">
+                                    <p><i class="fa fa-location-arrow" style="font-size: 14px ;color: #fff ;margin-right: 16px ;"></i>12 Main Street Pt. London
+                                        <br>
+                                        <span class="gdlr-core-space-shortcode" style="margin-top: -9px ;"></span>
+                                        <br>
+                                        <i class="fa fa-envelope-o" style="font-size: 14px ;color: #fff ;margin-right: 16px ;"></i><a href="/cdn-cgi/l/email-protection#375458594356544377555e50445b565a435f525a521954585a"><span class="__cf_email__" data-cfemail="e784888993868493a7858e80948b868a938f828a82c984888a">[email&#160;protected]</span></a>
+                                        <br>
+                                        <span class="gdlr-core-space-shortcode" style="margin-top: -9px ;"></span>
+                                        <br>
+                                        <i class="fa fa-phone" style="font-size: 14px ;color: #fff ;margin-right: 16px ;"></i><span style="color: #fff; font-size: 20px; font-weight: 700;">+44 3656 4567 </span></p>
+                                    <p><span class="gdlr-core-space-shortcode" style="margin-top: 30px ;"></span>
+                                        <br>
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" style="font-size: 16px ;color: #ec4613 ;margin-right: 20px ;"></i></a> <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" style="font-size: 16px ;color: #ec4613 ;margin-right: 20px ;"></i></a> <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" style="font-size: 16px ;color: #ec4613 ;margin-right: 20px ;"></i></a> <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-pinterest-p" style="font-size: 16px ;color: #ec4613 ;margin-right: 20px ;"></i></a> <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-vimeo" style="font-size: 16px ;color: #ec4613 ;margin-right: 20px ;"></i></a> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bigslam-footer-column bigslam-item-pdlr bigslam-column-15">
+                            <div id="recent-posts-3" class="widget widget_recent_entries bigslam-widget">
+                                <h3 class="bigslam-widget-title">Recent Posts</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">Gallery Post Format</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Possession of my entire soul</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Audio Post Format</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Quote Post Format</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bigslam-footer-column bigslam-item-pdlr bigslam-column-15">
+                            <div id="gdlr-core-recent-portfolio-widget-1" class="widget widget_gdlr-core-recent-portfolio-widget bigslam-widget">
+                                <h3 class="bigslam-widget-title">Recent Works</h3>
+                                <div class="gdlr-core-recent-portfolio-widget-wrap clearfix">
+                                    <div class="gdlr-core-recent-portfolio-widget gdlr-core-media-image">
+                                        <a href="#"><img src=" {% static 'upload/shutterstock_220438474-150x150.jpg' %} " alt="" width="150" height="150" title="shutterstock_220438474"><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon  gdlr-core-size-15 icon_link_alt"></i></span></a>
+                                    </div>
+                                    <div class="gdlr-core-recent-portfolio-widget gdlr-core-media-image">
+                                        <a href="#"><img src=" {% static 'upload/shutterstock_306179018-150x150.jpg' %} " alt="" width="150" height="150" title="shutterstock_306179018"><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon  gdlr-core-size-15 icon_link_alt"></i></span></a>
+                                    </div>
+                                    <div class="gdlr-core-recent-portfolio-widget gdlr-core-media-image">
+                                        <a href="#"><img src=" {% static 'upload/shutterstock_247257382-150x150.jpg' %} " alt="" width="150" height="150" title="shutterstock_247257382"><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon  gdlr-core-size-15 icon_link_alt"></i></span></a>
+                                    </div>
+                                    <div class="gdlr-core-recent-portfolio-widget gdlr-core-media-image">
+                                        <a href="#"><img src=" {% static 'upload/shutterstock_326061359-150x150.jpg' %} " alt="" width="150" height="150" title="shutterstock_326061359"><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon  gdlr-core-size-15 icon_link_alt"></i></span></a>
+                                    </div>
+                                    <div class="gdlr-core-recent-portfolio-widget gdlr-core-media-image">
+                                        <a href="#"><img src=" {% static 'upload/pexels-photo-24546-150x150.jpg' %} " alt="" width="150" height="150" title="pexels-photo-24546"><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon  gdlr-core-size-15 icon_link_alt"></i></span></a>
+                                    </div>
+                                    <div class="gdlr-core-recent-portfolio-widget gdlr-core-media-image">
+                                        <a href="#"><img src=" {% static 'upload/shoes-lebron-nike-spalding-150x150.jpg' %} " alt="" width="150" height="150" title="shoes-lebron-nike-spalding"><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon  gdlr-core-size-15 icon_link_alt"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bigslam-footer-column bigslam-item-pdlr bigslam-column-15">
+                            <div id="text-1" class="widget widget_text bigslam-widget">
+                                <div class="textwidget">
+                                    <div class="bigslam-center-align"><img src=" {% static 'upload/logo.png' %}" alt="" width="90">
+                                        <span class="gdlr-core-space-shortcode" style="margin-top: 20px ;"></span>
+                                        <h6>Big Slam</h6> Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bigslam-copyright-wrapper">
+                    <div class="bigslam-copyright-container bigslam-container clearfix">
+                        <div class="bigslam-copyright-left bigslam-item-pdlr"><a href="index.html" style="margin-right: 30px;">Home</a><a href="#" style="margin-right: 30px;">About</a><a href="#" style="margin-right: 30px;">News</a><a href="#">Contact </a></div>
+                        <div class="bigslam-copyright-right bigslam-item-pdlr">Copyright 2019 Max Themes, All Right Reserved</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div><a href="#bigslam-top-anchor" class="bigslam-footer-back-to-top-button" id="bigslam-footer-back-to-top-button"><i class="fa fa-angle-up"></i></a>
+
+    <script type='text/javascript' src="{% static 'js/jquery/jquery.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/jquery/jquery-migrate.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'plugins/revslider/public/assets/js/revolution.tools.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'plugins/revslider/public/assets/js/rs6.min.js' %}"></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var SnazzyDataForSnazzyMaps = [];
+        SnazzyDataForSnazzyMaps = {
+            "id": 38,
+            "name": "Shades of Grey",
+            "description": "A map with various shades of grey. Great for a website with a really dark theme. ",
+            "url": "https:\/\/snazzymaps.com\/style\/38\/shades-of-grey",
+            "imageUrl": "https:\/\/snazzy-maps-cdn.azureedge.net\/assets\/38-shades-of-grey.png?v=20170407093939",
+            "json": "[{\"featureType\":\"all\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"saturation\":36},{\"color\":\"#000000\"},{\"lightness\":40}]},{\"featureType\":\"all\",\"elementType\":\"labels.text.stroke\",\"stylers\":[{\"visibility\":\"on\"},{\"color\":\"#000000\"},{\"lightness\":16}]},{\"featureType\":\"all\",\"elementType\":\"labels.icon\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"administrative\",\"elementType\":\"geometry.fill\",\"stylers\":[{\"color\":\"#000000\"},{\"lightness\":20}]},{\"featureType\":\"administrative\",\"elementType\":\"geometry.stroke\",\"stylers\":[{\"color\":\"#000000\"},{\"lightness\":17},{\"weight\":1.2}]},{\"featureType\":\"landscape\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#000000\"},{\"lightness\":20}]},{\"featureType\":\"poi\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#000000\"},{\"lightness\":21}]},{\"featureType\":\"road.highway\",\"elementType\":\"geometry.fill\",\"stylers\":[{\"color\":\"#000000\"},{\"lightness\":17}]},{\"featureType\":\"road.highway\",\"elementType\":\"geometry.stroke\",\"stylers\":[{\"color\":\"#000000\"},{\"lightness\":29},{\"weight\":0.2}]},{\"featureType\":\"road.arterial\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#000000\"},{\"lightness\":18}]},{\"featureType\":\"road.local\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#000000\"},{\"lightness\":16}]},{\"featureType\":\"transit\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#000000\"},{\"lightness\":19}]},{\"featureType\":\"water\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#000000\"},{\"lightness\":17}]}]",
+            "views": 264721,
+            "favorites": 544,
+            "createdBy": {
+                "name": "Adam Krogh",
+                "url": "https:\/\/twitter.com\/adamkrogh"
+            },
+            "createdOn": "2013-11-12T18:21:41.94",
+            "tags": ["dark", "greyscale"],
+            "colors": ["black", "gray"]
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src="{% static 'plugins/snazzy-maps/snazzymaps.js' %}"></script>
+    <script type="text/javascript">
+        function setREVStartSize(t) {
+            try {
+                var h, e = document.getElementById(t.c).parentNode.offsetWidth;
+                if (e = 0 === e || isNaN(e) ? window.innerWidth : e, t.tabw = void 0 === t.tabw ? 0 : parseInt(t.tabw), t.thumbw = void 0 === t.thumbw ? 0 : parseInt(t.thumbw), t.tabh = void 0 === t.tabh ? 0 : parseInt(t.tabh), t.thumbh = void 0 === t.thumbh ? 0 : parseInt(t.thumbh), t.tabhide = void 0 === t.tabhide ? 0 : parseInt(t.tabhide), t.thumbhide = void 0 === t.thumbhide ? 0 : parseInt(t.thumbhide), t.mh = void 0 === t.mh || "" == t.mh || "auto" === t.mh ? 0 : parseInt(t.mh, 0), "fullscreen" === t.layout || "fullscreen" === t.l) h = Math.max(t.mh, window.innerHeight);
+                else {
+                    for (var i in t.gw = Array.isArray(t.gw) ? t.gw : [t.gw], t.rl) void 0 !== t.gw[i] && 0 !== t.gw[i] || (t.gw[i] = t.gw[i - 1]);
+                    for (var i in t.gh = void 0 === t.el || "" === t.el || Array.isArray(t.el) && 0 == t.el.length ? t.gh : t.el, t.gh = Array.isArray(t.gh) ? t.gh : [t.gh], t.rl) void 0 !== t.gh[i] && 0 !== t.gh[i] || (t.gh[i] = t.gh[i - 1]);
+                    var r, a = new Array(t.rl.length),
+                        n = 0;
+                    for (var i in t.tabw = t.tabhide >= e ? 0 : t.tabw, t.thumbw = t.thumbhide >= e ? 0 : t.thumbw, t.tabh = t.tabhide >= e ? 0 : t.tabh, t.thumbh = t.thumbhide >= e ? 0 : t.thumbh, t.rl) a[i] = t.rl[i] < window.innerWidth ? 0 : t.rl[i];
+                    for (var i in r = a[0], a) r > a[i] && 0 < a[i] && (r = a[i], n = i);
+                    var d = e > t.gw[n] + t.tabw + t.thumbw ? 1 : (e - (t.tabw + t.thumbw)) / t.gw[n];
+                    h = t.gh[n] * d + (t.tabh + t.thumbh)
+                }
+                void 0 === window.rs_init_css && (window.rs_init_css = document.head.appendChild(document.createElement("style"))), document.getElementById(t.c).height = h, window.rs_init_css.innerHTML += "#" + t.c + "_wrapper { height: " + h + "px }"
+            } catch (t) {
+                console.log("Failure at Presize of Slider:" + t)
+            }
+        };
+    </script>
+
+
+    <script type='text/javascript' src="{% static 'plugins/goodlayers-core/plugins/script.js' %}"></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var gdlr_core_pbf = {
+            "admin": "",
+            "video": {
+                "width": "640",
+                "height": "360"
+            },
+            "ajax_url": "#",
+            "ilightbox_skin": "dark"
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src="{% static 'plugins/goodlayers-core/include/js/page-builder.js' %}"></script>
+    <script type='text/javascript' src="{% static 'plugins/sportspress/assets/js/jquery.dataTables.min.js' %}"></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var localized_strings = {
+            "days": "days",
+            "hrs": "hrs",
+            "mins": "mins",
+            "secs": "secs",
+            "previous": "Previous",
+            "next": "Next"
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src="{% static 'plugins/sportspress/assets/js/sportspress.js' %}"></script>
+    <script type='text/javascript' src='js/jquery/ui/effect.min.js' %}"></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var bigslam_script_core = {
+            "home_url": "index.html"
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src="{% static 'js/plugins.js' %}"></script>
+    <script type='text/javascript' src="{% static 'plugins/google-map-plugin/assets/js/maps.js' %}"></script>
+    <script type="text/javascript">
+        setREVStartSize({
+            c: 'rev_slider_1_1',
+            rl: [1240, 1240, 1240, 480],
+            el: [890, 890, 890, 520],
+            gw: [1300, 1300, 1300, 480],
+            gh: [890, 890, 890, 520],
+            layout: 'fullwidth',
+            mh: "0"
+        });
+        var revapi1,
+            tpj;
+        jQuery(function() {
+            tpj = jQuery;
+            if (tpj("#rev_slider_1_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_1_1");
+            } else {
+                revapi1 = tpj("#rev_slider_1_1").show().revolution({
+                    jsFileLocation: "plugins/revslider/public/assets/js/",
+                    visibilityLevels: "1240,1240,1240,480",
+                    gridwidth: "1300,1300,1300,480",
+                    gridheight: "890,890,890,520",
+                    minHeight: "",
+                    editorheight: "890,768,960,520",
+                    responsiveLevels: "1240,1240,1240,480",
+                    disableProgressBar: "on",
+                    navigation: {
+                        mouseScrollNavigation: false,
+                        onHoverStop: false,
+                        arrows: {
+                            enable: true,
+                            style: "uranus",
+                            hide_onmobile: true,
+                            hide_under: "980px",
+                            hide_onleave: true,
+                            left: {
+                                v_offset: 101
+                            },
+                            right: {
+                                v_offset: 101
+                            }
+                        },
+                        bullets: {
+                            enable: true,
+                            tmp: "<span class=/"tp-bullet-inner/"></span>",
+                            style: "uranus",
+                            v_offset: 40,
+                            space: 10
+                        }
+                    },
+                    fallbacks: {
+                        allowHTML5AutoPlayOnAndroid: true
+                    },
+                });
+            }
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        setREVStartSize({
+            c: 'rev_slider_1_1',
+            rl: [1240, 1240, 1240, 480],
+            el: [890, 890, 890, 520],
+            gw: [1300, 1300, 1300, 480],
+            gh: [890, 890, 890, 520],
+            layout: 'fullwidth',
+            mh: "0"
+        });
+        var revapi1,
+            tpj;
+        jQuery(function() {
+            tpj = jQuery;
+            if (tpj("#rev_slider_1_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_1_1");
+            } else {
+                revapi1 = tpj("#rev_slider_1_1").show().revolution({
+                    jsFileLocation: "plugins/revslider/public/assets/js/",
+                    visibilityLevels: "1240,1240,1240,480",
+                    gridwidth: "1300,1300,1300,480",
+                    gridheight: "890,890,890,520",
+                    minHeight: "",
+                    editorheight: "890,768,960,520",
+                    responsiveLevels: "1240,1240,1240,480",
+                    disableProgressBar: "on",
+                    navigation: {
+                        mouseScrollNavigation: false,
+                        onHoverStop: false,
+                        arrows: {
+                            enable: true,
+                            style: "uranus",
+                            hide_onmobile: true,
+                            hide_under: "980px",
+                            hide_onleave: true,
+                            left: {
+                                v_offset: 101
+                            },
+                            right: {
+                                v_offset: 101
+                            }
+                        },
+                        bullets: {
+                            enable: true,
+                            tmp: "<span class=\"tp-bullet-inner\"></span>",
+                            style: "uranus",
+                            v_offset: 40,
+                            space: 10
+                        }
+                    },
+                    fallbacks: {
+                        allowHTML5AutoPlayOnAndroid: true
+                    },
+                });
+            }
+
+        });
+    </script>
+    <script>
+        var htmlDivCss = unescape("%23rev_slider_1_1_wrapper%20.uranus.tparrows%20%7B%0A%20%20width%3A50px%3B%0A%20%20height%3A50px%3B%0A%20%20background%3Argba%28255%2C255%2C255%2C0%29%3B%0A%20%7D%0A%20%23rev_slider_1_1_wrapper%20.uranus.tparrows%3Abefore%20%7B%0A%20width%3A50px%3B%0A%20height%3A50px%3B%0A%20line-height%3A50px%3B%0A%20font-size%3A40px%3B%0A%20transition%3Aall%200.3s%3B%0A-webkit-transition%3Aall%200.3s%3B%0A%20%7D%0A%20%0A%20%20%23rev_slider_1_1_wrapper%20.uranus.tparrows%3Ahover%3Abefore%20%7B%0A%20%20%20%20opacity%3A0.75%3B%0A%20%20%7D%0A%23rev_slider_1_1_wrapper%20.uranus%20.tp-bullet%7B%0A%20%20border-radius%3A%2050%25%3B%0A%20%20box-shadow%3A%200%200%200%202px%20rgba%28255%2C255%2C255%2C0%29%3B%0A%20%20-webkit-transition%3A%20box-shadow%200.3s%20ease%3B%0A%20%20transition%3A%20box-shadow%200.3s%20ease%3B%0A%20%20background%3Atransparent%3B%0A%20%20width%3A15px%3B%0A%20%20height%3A15px%3B%0A%7D%0A%23rev_slider_1_1_wrapper%20.uranus%20.tp-bullet.selected%2C%0A%23rev_slider_1_1_wrapper%20.uranus%20.tp-bullet%3Ahover%20%7B%0A%20%20box-shadow%3A%200%200%200%202px%20rgba%28255%2C255%2C255%2C1%29%3B%0A%20%20border%3Anone%3B%0A%20%20border-radius%3A%2050%25%3B%0A%20%20background%3Atransparent%3B%0A%7D%0A%0A%23rev_slider_1_1_wrapper%20.uranus%20.tp-bullet-inner%20%7B%0A%20%20-webkit-transition%3A%20background-color%200.3s%20ease%2C%20-webkit-transform%200.3s%20ease%3B%0A%20%20transition%3A%20background-color%200.3s%20ease%2C%20transform%200.3s%20ease%3B%0A%20%20top%3A%200%3B%0A%20%20left%3A%200%3B%0A%20%20width%3A%20100%25%3B%0A%20%20height%3A%20100%25%3B%0A%20%20outline%3A%20none%3B%0A%20%20border-radius%3A%2050%25%3B%0A%20%20background-color%3A%20rgba%28255%2C255%2C255%2C0%29%3B%0A%20%20background-color%3A%20rgba%28255%2C255%2C255%2C0.3%29%3B%0A%20%20text-indent%3A%20-999em%3B%0A%20%20cursor%3A%20pointer%3B%0A%20%20position%3A%20absolute%3B%0A%7D%0A%0A%23rev_slider_1_1_wrapper%20.uranus%20.tp-bullet.selected%20.tp-bullet-inner%2C%0A%23rev_slider_1_1_wrapper%20.uranus%20.tp-bullet%3Ahover%20.tp-bullet-inner%7B%0A%20transform%3A%20scale%280.4%29%3B%0A%20-webkit-transform%3A%20scale%280.4%29%3B%0A%20background-color%3Argba%28255%2C255%2C255%2C1%29%3B%0A%7D%0A");
+        var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+        if (htmlDiv) {
+            htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+        } else {
+            var htmlDiv = document.createElement('div');
+            htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+            document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+        }
+    </script>
+    <script>
+        var htmlDivCss = unescape("%0A%0A%0A%0A");
+        var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+        if (htmlDiv) {
+            htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+        } else {
+            var htmlDiv = document.createElement('div');
+            htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+            document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+        }
+    </script>
+
+
+    <script type="text/javascript">
+        if (typeof revslider_showDoubleJqueryError === "undefined") {
+            function revslider_showDoubleJqueryError(sliderID) {
+                var err = "<div class='rs_error_message_box'>";
+                err += "<div class='rs_error_message_oops'>Oops...</div>";
+                err += "<div class='rs_error_message_content'>";
+                err += "You have some jquery.js library include that comes after the Slider Revolution files js inclusion.<br>";
+                err += "To fix this, you can:<br>&nbsp;&nbsp;&nbsp; 1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on";
+                err += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jQuery.js inclusion and remove it";
+                err += "</div>";
+                err += "</div>";
+                jQuery(sliderID).show().html(err);
+            }
+        }
+    </script>
+</body>
+</html>

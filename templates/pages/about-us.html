@@ -1,7 +1,10 @@
+{% extends "bases/base.html" %}
+
+{% load static %}
 
 
-
-
+{% block content %}
+    
 
 
             <div class="bigslam-page-title-wrap  bigslam-style-medium bigslam-left-align">
@@ -128,7 +131,7 @@
                                 <div class="gdlr-core-pbf-column gdlr-core-column-30">
                                     <div class="gdlr-core-pbf-column-content-margin gdlr-core-js  gdlr-core-column-extend-right" style="padding: 100px 100px 0px 0px;" data-sync-height="height-1">
                                         <div class="gdlr-core-pbf-background-wrap" style="background-color: #f1f0f0 ;">
-                                            <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(upload/service-bg-2.jpg) ;background-size: cover ;background-position: center ;" data-parallax-speed="0.2"></div>
+                                            <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url({% static 'upload/service-bg-2.jpg'%}) ;background-size: cover ;background-position: center ;" data-parallax-speed="0.2"></div>
                                         </div>
                                         <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content" data-gdlr-animation="fadeInLeft" data-gdlr-animation-duration="600ms" data-gdlr-animation-offset="0.8"></div>
                                     </div>
@@ -163,7 +166,7 @@
                                         <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content" data-gdlr-animation="fadeInRight" data-gdlr-animation-duration="600ms" data-gdlr-animation-offset="0.8">
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-no-caption gdlr-core-item-pdlr">
-                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-top: 15px;margin-right: 55px;"><img src="upload/player-5-single-1-800x404.jpg" width="1800" height="911"  alt=""></div>
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-top: 15px;margin-right: 55px;"><img rc="{% static 'upload/d/player-5-single-1-800x404.jpg' %}" width="1800" height="911"  alt=""></div>
                                                     <div class="gdlr-core-column-service-content-wrapper">
                                                         <div class="gdlr-core-column-service-title-wrap">
                                                             <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 21px ;text-transform: none ;">Ornare Quam Justo Tellusv</h3></div>
@@ -175,7 +178,7 @@
                                             </div>
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-no-caption gdlr-core-item-pdlr">
-                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-top: 15px;margin-right: 55px;margin-left: 5px;"><img src="upload/player-6-single-800x404.jpg" width="1800" height="911"  alt=""></div>
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-top: 15px;margin-right: 55px;margin-left: 5px;"><img rc="{% static 'upload/d/player-6-single-800x404.jpg' %}" width="1800" height="911"  alt=""></div>
                                                     <div class="gdlr-core-column-service-content-wrapper">
                                                         <div class="gdlr-core-column-service-title-wrap">
                                                             <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 21px ;text-transform: none ;">Pellentesque Magna Venenatis</h3></div>
@@ -187,7 +190,7 @@
                                             </div>
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 0px;">
-                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin: 15px 43px 0px 13px;"><img src="upload/player-2-single-800x404.jpg" width="1800" height="911" alt=""></div>
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin: 15px 43px 0px 13px;"><img rc="{% static 'upload/d/player-2-single-800x404.jpg' %}" width="1800" height="911" alt=""></div>
                                                     <div class="gdlr-core-column-service-content-wrapper">
                                                         <div class="gdlr-core-column-service-title-wrap">
                                                             <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 21px ;text-transform: none ;">Magna Nibh Commodo</h3></div>
@@ -218,7 +221,7 @@
                                         <div class="gdlr-core-personnel-list-column  gdlr-core-column-20 gdlr-core-column-first gdlr-core-item-pdlr">
                                             <div class="gdlr-core-personnel-list clearfix">
                                                 <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                    <a href="#"><img src="upload/personnel-1-1-400x363.jpg" width="550" height="500"  alt=""></a>
+                                                    <a href="#"><img rc="{% static 'upload/d/personnel-1-1-400x363.jpg' %}" width="550" height="500"  alt=""></a>
                                                 </div>
                                                 <div class="gdlr-core-personnel-list-content-wrap">
                                                     <h3 class="gdlr-core-personnel-list-title"><a href="#">Luke Anderson</a></h3>
@@ -229,7 +232,7 @@
                                         <div class="gdlr-core-personnel-list-column  gdlr-core-column-20 gdlr-core-item-pdlr">
                                             <div class="gdlr-core-personnel-list clearfix">
                                                 <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                    <a href="#"><img src="upload/personnel-2-1-400x363.jpg" width="550" height="500" alt=""></a>
+                                                    <a href="#"><img rc="{% static 'upload/d/personnel-2-1-400x363.jpg' %}" width="550" height="500" alt=""></a>
                                                 </div>
                                                 <div class="gdlr-core-personnel-list-content-wrap">
                                                     <h3 class="gdlr-core-personnel-list-title"><a href="#">Alan Cooper</a></h3>
@@ -240,7 +243,7 @@
                                         <div class="gdlr-core-personnel-list-column  gdlr-core-column-20 gdlr-core-item-pdlr">
                                             <div class="gdlr-core-personnel-list clearfix">
                                                 <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                    <a href="#"><img src="upload/personnel-3-1-400x363.jpg" width="550" height="500"  alt=""></a>
+                                                    <a href="#"><img rc="{% static 'upload/d/personnel-3-1-400x363.jpg' %}" width="550" height="500"  alt=""></a>
                                                 </div>
                                                 <div class="gdlr-core-personnel-list-content-wrap">
                                                     <h3 class="gdlr-core-personnel-list-title"><a href="#">John Smithy</a></h3>
@@ -251,7 +254,7 @@
                                         <div class="gdlr-core-personnel-list-column  gdlr-core-column-20 gdlr-core-column-first gdlr-core-item-pdlr">
                                             <div class="gdlr-core-personnel-list clearfix">
                                                 <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                    <a href="#"><img src="upload/personnel-6-400x363.jpg" width="550" height="500" alt=""></a>
+                                                    <a href="#"><img rc="{% static 'upload/d/personnel-6-400x363.jpg' %}" width="550" height="500" alt=""></a>
                                                 </div>
                                                 <div class="gdlr-core-personnel-list-content-wrap">
                                                     <h3 class="gdlr-core-personnel-list-title"><a href="#">Peter Sandler</a></h3>
@@ -262,7 +265,7 @@
                                         <div class="gdlr-core-personnel-list-column  gdlr-core-column-20 gdlr-core-item-pdlr">
                                             <div class="gdlr-core-personnel-list clearfix">
                                                 <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                    <a href="#"><img src="upload/personnel-4-1-400x363.jpg" width="550" height="500" alt=""></a>
+                                                    <a href="#"><img rc="{% static 'upload/d/personnel-4-1-400x363.jpg' %}" width="550" height="500" alt=""></a>
                                                 </div>
                                                 <div class="gdlr-core-personnel-list-content-wrap">
                                                     <h3 class="gdlr-core-personnel-list-title"><a href="#">Ricardo Gomez</a></h3>
@@ -273,7 +276,7 @@
                                         <div class="gdlr-core-personnel-list-column  gdlr-core-column-20 gdlr-core-item-pdlr">
                                             <div class="gdlr-core-personnel-list clearfix">
                                                 <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                    <a href="#"><img src="upload/personnel-4-400x363.jpg" width="550" height="500"  alt=""></a>
+                                                    <a href="#"><img rc="{% static 'upload/d/personnel-4-400x363.jpg' %}" width="550" height="500"  alt=""></a>
                                                 </div>
                                                 <div class="gdlr-core-personnel-list-content-wrap">
                                                     <h3 class="gdlr-core-personnel-list-title"><a href="#">James Smith</a></h3>
@@ -288,136 +291,4 @@
                     </div>
                 </div>
             </div>
-
-
-            <footer>
-                <div class="bigslam-footer-wrapper">
-                    <div class="bigslam-footer-container bigslam-container clearfix">
-                        <div class="bigslam-footer-column bigslam-item-pdlr bigslam-column-15">
-                            <div id="text-2" class="widget widget_text bigslam-widget">
-                                <h3 class="bigslam-widget-title">Contact Info</h3>
-                                <div class="textwidget">
-                                    <p><i class="fa fa-location-arrow" style="font-size: 14px ;color: #fff ;margin-right: 16px ;"></i>12 Main Street Pt. London
-                                        <br>
-                                        <span class="gdlr-core-space-shortcode" style="margin-top: -9px ;"></span>
-                                        <br>
-                                        <i class="fa fa-envelope-o" style="font-size: 14px ;color: #fff ;margin-right: 16px ;"></i><a href="#"><span class="__cf_email__" data-cfemail="#">[email&#160;protected]</span></a>
-                                        <br>
-                                        <span class="gdlr-core-space-shortcode" style="margin-top: -9px ;"></span>
-                                        <br>
-                                        <i class="fa fa-phone" style="font-size: 14px ;color: #fff ;margin-right: 16px ;"></i><span style="color: #fff; font-size: 20px; font-weight: 700;">+44 3656 4567 </span></p>
-                                    <p><span class="gdlr-core-space-shortcode" style="margin-top: 30px ;"></span>
-                                        <br>
-                                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" style="font-size: 16px ;color: #ec4613 ;margin-right: 20px ;"></i></a> <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" style="font-size: 16px ;color: #ec4613 ;margin-right: 20px ;"></i></a> <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" style="font-size: 16px ;color: #ec4613 ;margin-right: 20px ;"></i></a> <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-pinterest-p" style="font-size: 16px ;color: #ec4613 ;margin-right: 20px ;"></i></a> <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-vimeo" style="font-size: 16px ;color: #ec4613 ;margin-right: 20px ;"></i></a> </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bigslam-footer-column bigslam-item-pdlr bigslam-column-15">
-                            <div id="recent-posts-3" class="widget widget_recent_entries bigslam-widget">
-                                <h3 class="bigslam-widget-title">Recent Posts</h3>
-                                <ul>
-                                    <li>
-                                        <a href="#">Gallery Post Format</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Possession of my entire soul</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Audio Post Format</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Quote Post Format</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="bigslam-footer-column bigslam-item-pdlr bigslam-column-15">
-                            <div id="gdlr-core-recent-portfolio-widget-1" class="widget widget_gdlr-core-recent-portfolio-widget bigslam-widget">
-                                <h3 class="bigslam-widget-title">Recent Works</h3>
-                                <div class="gdlr-core-recent-portfolio-widget-wrap clearfix">
-                                    <div class="gdlr-core-recent-portfolio-widget gdlr-core-media-image">
-                                        <a href="#"><img src="upload/shutterstock_220438474-150x150.jpg" alt="" width="150" height="150" title="shutterstock_220438474"><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon  gdlr-core-size-15 icon_link_alt"></i></span></a>
-                                    </div>
-                                    <div class="gdlr-core-recent-portfolio-widget gdlr-core-media-image">
-                                        <a href="#"><img src="upload/shutterstock_306179018-150x150.jpg" alt="" width="150" height="150" title="shutterstock_306179018"><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon  gdlr-core-size-15 icon_link_alt"></i></span></a>
-                                    </div>
-                                    <div class="gdlr-core-recent-portfolio-widget gdlr-core-media-image">
-                                        <a href="#"><img src="upload/shutterstock_247257382-150x150.jpg" alt="" width="150" height="150" title="shutterstock_247257382"><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon  gdlr-core-size-15 icon_link_alt"></i></span></a>
-                                    </div>
-                                    <div class="gdlr-core-recent-portfolio-widget gdlr-core-media-image">
-                                        <a href="#"><img src="upload/shutterstock_326061359-150x150.jpg" alt="" width="150" height="150" title="shutterstock_326061359"><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon  gdlr-core-size-15 icon_link_alt"></i></span></a>
-                                    </div>
-                                    <div class="gdlr-core-recent-portfolio-widget gdlr-core-media-image">
-                                        <a href="#"><img src="upload/pexels-photo-24546-150x150.jpg" alt="" width="150" height="150" title="pexels-photo-24546"><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon  gdlr-core-size-15 icon_link_alt"></i></span></a>
-                                    </div>
-                                    <div class="gdlr-core-recent-portfolio-widget gdlr-core-media-image">
-                                        <a href="#"><img src="upload/shoes-lebron-nike-spalding-150x150.jpg" alt="" width="150" height="150" title="shoes-lebron-nike-spalding"><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon  gdlr-core-size-15 icon_link_alt"></i></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bigslam-footer-column bigslam-item-pdlr bigslam-column-15">
-                            <div id="text-1" class="widget widget_text bigslam-widget">
-                                <div class="textwidget">
-                                    <div class="bigslam-center-align"><img src="upload/logo.png" alt="" width="90">
-                                        <span class="gdlr-core-space-shortcode" style="margin-top: 20px ;"></span>
-                                        <h6>Big Slam</h6> Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bigslam-copyright-wrapper">
-                    <div class="bigslam-copyright-container bigslam-container clearfix">
-                        <div class="bigslam-copyright-left bigslam-item-pdlr"><a href="index.html" style="margin-right: 30px;">Home</a><a href="#" style="margin-right: 30px;">About</a><a href="#" style="margin-right: 30px;">News</a><a href="#">Contact </a></div>
-                        <div class="bigslam-copyright-right bigslam-item-pdlr">Copyright 2019 Max Themes, All Right Reserved</div>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </div><a href="#bigslam-top-anchor" class="bigslam-footer-back-to-top-button" id="bigslam-footer-back-to-top-button"><i class="fa fa-angle-up"></i></a>
-
-    <script type='text/javascript' src='js/jquery/jquery.js'></script>
-    <script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
-    <script type='text/javascript' src='plugins/goodlayers-core/plugins/script.js'></script>
-    <script type='text/javascript'>
-        /* <![CDATA[ */
-        var gdlr_core_pbf = {
-            "admin": "",
-            "video": {
-                "width": "640",
-                "height": "360"
-            },
-            "ajax_url": "#",
-            "ilightbox_skin": "dark"
-        };
-        /* ]]> */
-    </script>
-    <script type='text/javascript' src='plugins/goodlayers-core/include/js/page-builder.js'></script>
-    <script type='text/javascript' src='plugins/sportspress/assets/js/jquery.dataTables.min.js'></script>
-    <script type='text/javascript'>
-        /* <![CDATA[ */
-        var localized_strings = {
-            "days": "days",
-            "hrs": "hrs",
-            "mins": "mins",
-            "secs": "secs",
-            "previous": "Previous",
-            "next": "Next"
-        };
-        /* ]]> */
-    </script>
-    <script type='text/javascript' src='plugins/sportspress/assets/js/sportspress.js'></script>
-    <script type='text/javascript' src='js/jquery/ui/effect.min.js'></script>
-    <script type='text/javascript'>
-        /* <![CDATA[ */
-        var bigslam_script_core = {
-            "home_url": "index.html"
-        };
-        /* ]]> */
-    </script>
-    <script type='text/javascript' src='js/plugins.js'></script>
-    <script type='text/javascript' src='plugins/google-map-plugin/assets/js/maps.js'></script>
-  
-</body>
-</html>
+{% endblock blockname %}
