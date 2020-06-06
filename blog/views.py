@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 
 def index(request):
-	return render(request,'pages/blog-grid-3-columns.html')
+	return render(request,'pages/blog-2-columns.html')
 
 def single(request):
 	return render(request,'pages/standard-post-type.html')

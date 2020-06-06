@@ -59,40 +59,17 @@
 {# menu mobile #}
 <ul id="menu-main-navigation" class="m-menu">
 
-
     <li class="menu-item menu-item-home current-menu-item"><a href="{% url 'home' %}" aria-current="page">Accueil</a></li>
 
-
-    <li class="menu-item menu-item-has-children"><a href="{% url 'game' %}">Programme</a></li>
-
+    <li class="menu-item"><a href="{% url 'game' %}">Programme</a></li>
 
     <li class="menu-item"><a href="{% url 'joueur' %}">Joueurs</a></li>
 
-
     <li class="menu-item "><a href="{% url 'equipe' %}">L'equipe</a></li>
 
+    <li class="menu-item"><a href="{% url 'league' %}">Ligue</a></li>
 
-    <li class="menu-item menu-item-has-children"><a href="#">Ligue</a>
-    <ul class="sub-menu">
-        <li class="menu-item menu-item-has-children"><a href="#">Game</a></li>
-        <li class="menu-item"><a href="player-list-gallery.html">Player</a></li>
-        <li class="menu-item"><a href="league-table.html">League Table</a></li>
-    </ul>
-    </li>
-
-    <li class="menu-item menu-item-has-children"><a href="#">Pages</a>
-        <ul class="sub-menu">
-            <li class="menu-item"><a href="about-us.html">About</a></li>
-            <li class="menu-item"><a href="portfolio-masonry-4-columns.html">Portfolio</a></li>
-        </ul>
-    </li>
-
-    <li class="menu-item menu-item-has-children"><a href="blog-full-right-sidebar.html">Blog</a>
-        <ul class="sub-menu">
-            <li class="menu-item menu-item-has-children"><a href="blog-3-columns-with-frame.html">Blog Columns</a></li>
-            <li class="menu-item"><a href="standard-post-type.html">Single Posts</a></li>
-        </ul>
-    </li>
+    <li class="menu-item"><a href="{% url 'blog:home' %}">Blog</a></li>
 
 </ul>
 
@@ -132,37 +109,17 @@
                 <div class="bigslam-main-menu" id="bigslam-main-menu">
                     <ul id="menu-main-navigation-1" class="sf-menu">
 
-                        <li class="menu-item menu-item-home current-menu-item bigslam-normal-menu"><a href="{% url 'home'%}">Home</a></li>
+                        <li class="menu-item menu-item-home current-menu-item bigslam-normal-menu"><a href="{% url 'home'%}">Accueil</a></li>
 
+                        <li class="menu-item bigslam-normal-menu"><a href="{% url 'game'%}" class="sf-with-ul-pre">Programme</a></li>
 
-                        <li class="menu-item bigslam-normal-menu"><a href="{% url 'game'%}" class="sf-with-ul-pre">Schedule</a></li>
+                        <li class="menu-item bigslam-normal-menu"><a href="{% url 'joueur'%}" class="sf-with-ul-pre">Joueurs</a></li>
 
-                        <li class="menu-item bigslam-normal-menu"><a href="{% url 'joueur'%}" class="sf-with-ul-pre">Players</a></li>
+                        <li class="menu-item bigslam-normal-menu"><a href="{% url 'equipe' %}">L'équipe</a></li>
 
-                        <li class="menu-item  bigslam-normal-menu"><a href="{% url 'equipe' %}">L'équipe</a></li>
+                        <li class="menu-item bigslam-normal-menu"><a href="{% url 'league' %}" class="sf-with-ul-pre">Ligue</a></li>
 
-
-                        <li class="menu-item menu-item-has-children bigslam-normal-menu"><a href="{% url 'league' %}" class="sf-with-ul-pre">Ligue</a></li>
-
-                        <li class="menu-item menu-item-has-children bigslam-normal-menu"><a href="#" class="sf-with-ul-pre">Pages</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item" data-size="60"><a href="about-us.html" class="sf-with-ul-pre">About</a></li>
-
-                                <li class="menu-item" data-size="60"><a href="portfolio-4-columns-with-frame.html" class="sf-with-ul-pre">Portfolio</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="menu-item menu-item-has-children bigslam-normal-menu"><a href="blog-full-both-sidebar.html" class="sf-with-ul-pre">Blog</a>
-                            <ul class="sub-menu">
-                                
-                                <li class="menu-item menu-item-has-children" data-size="60"><a href="blog-grid-3-columns-no-space.html" class="sf-with-ul-pre">Blog Grid</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="blog-grid-3-columns.html">Blog Grid 3 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item" data-size="60"><a href="standard-post-type.html">Single Posts</a></li>
-                            </ul>
-                        </li>
+                        <li class="menu-item bigslam-normal-menu"><a href="{% url 'blog:home' %}" class="sf-with-ul-pre">Blog</a></li>
                     </ul>
                     <div class="bigslam-navigation-slide-bar" id="bigslam-navigation-slide-bar"></div>
                     <div class="bigslam-navigation-slide-bar-small" id="bigslam-navigation-slide-bar-small"></div>
