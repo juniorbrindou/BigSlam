@@ -9,6 +9,8 @@ class EquipeAdmin(admin.ModelAdmin):
 	'nationnalite',
 	'stade',
 	'coach',
+	'date_add',
+	'date_upd',
 	)
 
 	list_filter = (
@@ -20,6 +22,8 @@ class EquipeAdmin(admin.ModelAdmin):
 	)
 
 	list_per_page = 10
+	date_hierarchy = 'date_add'
+
 
 	fieldsets = [
 		('Creation de Joueur',{
