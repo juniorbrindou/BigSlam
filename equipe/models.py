@@ -17,4 +17,4 @@ class Equipe(models.Model):
 		verbose_name_plural = 'Equipes'
 
 	def __str__(self):
-		return str(self.titre)
+		return str(self.libelle)
