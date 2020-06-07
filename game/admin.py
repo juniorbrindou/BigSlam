@@ -22,7 +22,7 @@ class GameAdmin(admin.ModelAdmin):
 	)
 
 	search_fields = (
-	# 'equipe1',
+	'equipe1',
 	# 'equipe2',
 	)
 
@@ -34,7 +34,7 @@ class GameAdmin(admin.ModelAdmin):
 			'fields':[
 				'rencontre',
 				'league',
-				# 'equipe1',
+				'equipe1',
 				# 'equipe2',
 				'stade',
 				'date_start',

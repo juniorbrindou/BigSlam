@@ -8,8 +8,7 @@ from django.utils import timezone
 class Game(models.Model):
 	rencontre = models.CharField(max_length=255)
 	league = models.ForeignKey('league.League', on_delete=models.CASCADE, related_name='League')
-	# equipe1 = models.ForeignKey('equipe.Equipe', on_delete=models.CASCADE, related_name='Equipe')
-	# equipe2 = models.ForeignKey('equipe.Equipe', on_delete=models.CASCADE, related_name='Equipe')
+	equipes = models.ManyToManyField('equipe.Equipe')
 	stade = models.CharField(max_length=255)
 	date_start = models.DateTimeField()
 	date_add = models.DateTimeField(auto_now_add=True)
