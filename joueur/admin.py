@@ -6,6 +6,7 @@ class JoueurAdmin(admin.ModelAdmin):
 	list_display = (
 	'nom',
 	'maillot',
+	'equipe',
 	'nationnalite',
 	'position',
 	'masse',
@@ -36,6 +37,7 @@ class JoueurAdmin(admin.ModelAdmin):
 				'position',
 				'maillot',
 				'masse',
+				'equipe'
 				'taille',
 			]
 		}),
