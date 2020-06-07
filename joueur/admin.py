@@ -8,11 +8,15 @@ class JoueurAdmin(admin.ModelAdmin):
 	'maillot',
 	'nationnalite',
 	'position',
+	'masse',
+	'taille',
 	)
 
 	list_filter = (
 	'position',
 	'nationnalite',
+	'masse',
+	'taille',
 	)
 
 	search_fields = (
@@ -28,6 +32,8 @@ class JoueurAdmin(admin.ModelAdmin):
 				'nationnalite',
 				'position',
 				'maillot',
+				'masse',
+				'taille',
 			]
 		}),
 	]

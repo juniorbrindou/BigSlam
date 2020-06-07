@@ -9,10 +9,9 @@ class Joueur(models.Model):
 	nationnalite = models.CharField(max_length=255)
 	position = models.CharField(max_length=255)
 	maillot = models.PositiveIntegerField()
+	masse = models.PositiveIntegerField()
+	taille = models.PositiveIntegerField()
 
 	class Meta:
 		verbose_name = 'Joueur'
 		verbose_name_plural = 'Joueurs'
-
-	def __str__(self):
-		return str(self.nom)
