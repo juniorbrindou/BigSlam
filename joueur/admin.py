@@ -5,6 +5,7 @@ from joueur import models
 class JoueurAdmin(admin.ModelAdmin):
 	list_display = (
 	'nom',
+	'maillot',
 	'nationnalite',
 	'position',
 	)
@@ -26,6 +27,7 @@ class JoueurAdmin(admin.ModelAdmin):
 				'nom',
 				'nationnalite',
 				'position',
+				'maillot',
 			]
 		}),
 	]

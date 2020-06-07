@@ -1,6 +1,4 @@
 from django.db import models
-import datetime
-from django.utils import timezone
 
 # Create your models here.
 
@@ -10,6 +8,7 @@ class Joueur(models.Model):
 	nom = models.CharField(max_length=255)
 	nationnalite = models.CharField(max_length=255)
 	position = models.CharField(max_length=255)
+	maillot = models.PositiveIntegerField()
 
 	class Meta:
 		verbose_name = 'Joueur'
