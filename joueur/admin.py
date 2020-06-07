@@ -6,13 +6,10 @@ class JoueurAdmin(admin.ModelAdmin):
 	list_display = (
 	'nom',
 	'maillot',
-	'equipe',
 	'nationnalite',
 	'position',
 	'masse',
 	'taille',
-	'date_add',
-	'date_upd',
 	)
 
 	list_filter = (
@@ -27,7 +24,6 @@ class JoueurAdmin(admin.ModelAdmin):
 	)
 
 	list_per_page = 10
-	date_hierarchy = 'date_add'
 
 	fieldsets = [
 		('Creation de Joueur',{
@@ -38,7 +34,6 @@ class JoueurAdmin(admin.ModelAdmin):
 				'maillot',
 				'masse',
 				'taille',
-				'equipe',
 			]
 		}),
 	]

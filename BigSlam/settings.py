@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # my apps
     'joueur.apps.JoueurConfig',
+    'game.apps.GameConfig',
     'equipe.apps.EquipeConfig',
     'home.apps.HomeConfig',
     'blog.apps.BlogConfig',

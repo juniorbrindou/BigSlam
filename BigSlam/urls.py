@@ -25,6 +25,7 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('joueur/', include('joueur.urls')),
     path('equipe/', include('equipe.urls')),
+    path('game/', include('game.urls')),
     path('league/', include('league.urls')),
 
 ]
