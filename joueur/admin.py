@@ -6,11 +6,11 @@ class JoueurAdmin(admin.ModelAdmin):
 	list_display = (
 	'nom',
 	'maillot',
-	'equipe',
 	'nationnalite',
 	'position',
 	'masse',
 	'taille',
+	'photo',
 	'date_add',
 	'date_upd',
 	)
@@ -37,8 +37,28 @@ class JoueurAdmin(admin.ModelAdmin):
 				'position',
 				'maillot',
 				'masse',
-				'equipe'
 				'taille',
+				'photo',
+			]
+		}),
+	]
+
+
+
+class PositionAdmin(admin.ModelAdmin):
+	list_display = (
+	'position',
+	'date_add',
+	'date_upd',
+	)
+
+	list_per_page = 10
+	date_hierarchy = 'date_add'
+
+	fieldsets = [
+		('Creation de Joueur',{
+			'fields':[
+				'position',
 			]
 		}),
 	]
@@ -47,3 +67,4 @@ def _register(model, admin_class):
 	admin.site.register(model, admin_class)
 
 _register(models.Joueur, JoueurAdmin)
+_register(models.Position, PositionAdmin)

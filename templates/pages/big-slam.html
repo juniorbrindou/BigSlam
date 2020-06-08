@@ -5,12 +5,14 @@
 
 {% block content %}
 
+    
+
             <div class="bigslam-page-title-wrap  bigslam-style-medium bigslam-center-align">
                 <div class="bigslam-header-transparent-substitute"></div>
                 <div class="bigslam-page-title-overlay"></div>
                 <div class="bigslam-page-title-container bigslam-container">
                     <div class="bigslam-page-title-content bigslam-item-pdlr">
-                        <h1 class="bigslam-page-title">Big Slam</h1></div>
+                        <h1 class="bigslam-page-title">{{team}}</h1></div>
                 </div>
             </div>
             <div class="bigslam-page-wrapper" id="bigslam-page-wrapper">
@@ -24,19 +26,7 @@
                                             <div class="bigslam-single-article-content">
                                                 <div class="sp-section-content sp-section-content-logo">
                                                     <div class="sp-template sp-template-team-logo sp-template-logo sp-team-logo">
-                                                        <img width="105" height="128" src="upload/team-1-105x128.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" > </div>
-                                                </div>
-                                                <div class="sp-section-content sp-section-content-excerpt"></div>
-                                                <div class="sp-section-content sp-section-content-content">
-                                                    <div class="sp-post-content">
-                                                        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="sp-section-content sp-section-content-link">
-                                                    <form action="https://goodlayers.com">
-                                                        <input type="submit" class="button sp-button sp-team-button" value="Visit Site">
-                                                    </form>
-                                                    <br>
+                                                        <img width="105" height="128" src=" {% static 'upload/team-1-105x128.png' %} " class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" > </div>
                                                 </div>
                                                 <div class="sp-section-content sp-section-content-details">
                                                     <div class="sp-template sp-template-team-details sp-template-details">

@@ -15,7 +15,7 @@ class Equipe(models.Model):
 
 	class Meta:
 		verbose_name = 'Equipe'
-		verbose_name_plural = 'Equipes'
+		verbose_name_plural = 'Equipe'
 
 	def __str__(self):
 		return str(self.libelle)

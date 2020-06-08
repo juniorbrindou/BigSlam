@@ -23,40 +23,47 @@
                                     <div class="gdlr-core-text-box-item-content">
                                         <div class="sportspress sp-widget-align-none">
                                             <div id='sp-player-gallery-63' class='gallery galleryid-63 gallery-columns-3 gallery-size-sportspress-crop-medium'>
+
+                                                
+                                                    
+                                                
                                                 <div class="sp-template sp-template-player-gallery sp-template-gallery">
                                                     <div class="sp-player-gallery-wrapper sp-gallery-wrapper">
                                                         <a name="group-0-guard" id="group-0-guard"></a>
-                                                        <h4 class="sp-gallery-group-name player-group-name player-gallery-group-name">Guard</h4>
+                                                        <h4 class="sp-gallery-group-name player-group-name player-gallery-group-name">Pivot</h4>
+
+                                                    {% for pivot in pivots %}
                                                         <dl class='gallery-item'>
-                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{% static 'upload/player-4-300x300.jpg' %}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="" ></a></dt>
+                                                            <dt class='gallery-icon portrait'>
+                                                                <a href="#">
+                                                                    <img width="300" height="300" src="{{pivot.photo.url}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="joueur" >
+                                                                </a>
+                                                            </dt>
                                                             <a href="{% url 'joueur:single'%}">
-                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>88</strong> Oscar Robertson</dd>
+                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>{{pivot.maillot}}</strong>{{pivot.nom}} </dd>
                                                             </a>
                                                         </dl>
-                                                        <dl class='gallery-item'>
-                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{% static 'upload/player-8-300x300.jpg' %}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="" ></a></dt>
-                                                            <a href="#">
-                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>44</strong> John Stockton</dd>
-                                                            </a>
-                                                        </dl>
+                                                    {% endfor %}
+
                                                     </div>
                                                 </div>
+                                                
+                                                
+
+
                                                 <div class="sp-template sp-template-player-gallery sp-template-gallery">
                                                     <div class="sp-player-gallery-wrapper sp-gallery-wrapper">
                                                         <a name="group-1-forward-guard" id="group-1-forward-guard"></a>
-                                                        <h4 class="sp-gallery-group-name player-group-name player-gallery-group-name">Forward-Guard</h4>
+                                                        <h4 class="sp-gallery-group-name player-group-name player-gallery-group-name">Meneur</h4>
+                                                        {% for meneur in meneurs %}
+                                                            
                                                         <dl class='gallery-item'>
-                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{% static 'upload/player-9-300x300.jpg' %}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="" ></a></dt>
+                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{{meneur.photo}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="{{meneur.position}}" ></a></dt>
                                                             <a href="#">
-                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>36</strong> Chris Paul</dd>
+                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>{{meneur.maillot}}</strong>{{meneur.nom}}</dd>
                                                             </a>
                                                         </dl>
-                                                        <dl class='gallery-item'>
-                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{% static 'upload/player-7-300x300.jpg' %}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="" ></a></dt>
-                                                            <a href="#">
-                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>18</strong> Blake Giffin</dd>
-                                                            </a>
-                                                        </dl>
+                                                        {% endfor %}
                                                     </div>
                                                 </div>
                                                 <div class="sp-template sp-template-player-gallery sp-template-gallery">

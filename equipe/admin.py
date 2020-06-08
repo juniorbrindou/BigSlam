@@ -32,6 +32,7 @@ class EquipeAdmin(admin.ModelAdmin):
 				'nationnalite',
 				'stade',
 				'coach',
+				'logo',
 			]
 		}),
 	]

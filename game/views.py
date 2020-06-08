@@ -1,7 +1,10 @@
 from django.shortcuts import render
-
+from . import models
 # Create your views here.
 
 
 def index(request):
-	return render(request,'pages/programme.html')
+	data = {
+	'rencontres':models.Game.objects.all(),
+	}
+	return render(request,'pages/programme.html',data)

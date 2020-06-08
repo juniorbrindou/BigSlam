@@ -25,70 +25,32 @@
                                         <div class="sportspress sp-widget-align-none">
                                             <div class="sp-template sp-template-event-list">
                                                 <div class="bigslam-sp-event-featured-holder clearfix">
+
                                                     <div class="bigslam-sp-event-featured-top bigslam-status-vs">
+                                                       
                                                         <div class="bigslam-sp-event-featured-title bigslam-title-font clearfix">
-                                                            <div class="bigslam-sp-event-featured-title-left"><span class="bigslam-sp-team-logo"><img width="200" height="244" src="upload/team-1.png" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-team-name">Big Slam</span></div><span class="bigslam-sp-event-result"><a href="#">VS</a></span>
-                                                            <div class="bigslam-sp-event-featured-title-right"><span class="bigslam-sp-team-logo"><img width="200" height="180" src="upload/team-5.png" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-team-name">Houston</span></div>
+                                                            <div class="bigslam-sp-event-featured-title-left"><span class="bigslam-sp-team-logo"><img width="200" height="244" src="{% static 'upload/team-1.png' %} " class="'attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-team-name">boston</span></div><span class="bigslam-sp-event-result"><a href="#">VS</a></span>
+                                                            <div class="bigslam-sp-event-featured-title-right"><span class="bigslam-sp-team-logo"><img width="200" height="180" src="{% static 'upload/team-5.png' %}" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-team-name">Houston</span></div>
                                                         </div>
+
                                                         <div class="bigslam-sp-event-featured-info"><span class="bigslam-sp-event-date">April 6, 2025</span><span class="bigslam-sp-event-venue"><a href="#" rel="tag">Houston House</a></span></div>
                                                         <div class="bigslam-sp-event-featured-link">
                                                             <a class="bigslam-sp-event-link" href="#">
                                                                 <div class="dashicons dashicons-video-alt"></div>Preview<i class="fa fa-long-arrow-right"></i></a>
                                                         </div>
                                                     </div>
+                                                    {% for rencontre in rencontres %}
+                                                        
                                                     <div class="bigslam-sp-event-featured-list clearfix">
-                                                        <div class="bigslam-sp-event-featured-title bigslam-title-font"><span class="bigslam-sp-team-logo"><img width="200" height="219" src="upload/team-8.png" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-team-name">New Yorkers</span><span class="bigslam-sp-event-result"><a href="#">VS</a></span><span class="bigslam-sp-team-name">Big Slam</span><span class="bigslam-sp-team-logo"><img width="200" height="244" src="upload/team-1.png" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span></div>
-                                                        <div class="bigslam-sp-event-featured-info"><span class="bigslam-sp-event-date">April 10, 2024</span><span class="bigslam-sp-event-venue"><a href="#" rel="tag">New Yorkers Stadium</a></span>
+                                                        <div class="bigslam-sp-event-featured-title bigslam-title-font"><span class="bigslam-sp-team-logo"><img width="200" height="219" src="{% static 'upload/team-8.png' %} " class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-team-name">New Yorkers</span><span class="bigslam-sp-event-result"><a href="#">VS</a></span><span class="bigslam-sp-team-name">{{rencontre.adversaire}}</span><span class="bigslam-sp-team-logo"><img width="200" height="244" src="{% static 'upload/team-1.png' %} " class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span></div>
+                                                        <div class="bigslam-sp-event-featured-info"><span class="bigslam-sp-event-date">{{rencontre.date_start}}</span><span class="bigslam-sp-event-venue"><a href="#" rel="tag">{{rencontre.stade}}</a></span>
                                                             <a class="bigslam-sp-event-link" href="#">
-                                                                <div class="dashicons dashicons-video-alt"></div>Preview<i class="fa fa-long-arrow-right"></i></a>
+                                                                <div class="dashicons dashicons-video-alt"></div>{{rencontre.has_played}}<i class="fa fa-long-arrow-right"></i></a>
                                                         </div>
                                                     </div>
-                                                    <div class="bigslam-sp-event-featured-list clearfix">
-                                                        <div class="bigslam-sp-event-featured-title bigslam-title-font"><span class="bigslam-sp-team-logo"><img width="200" height="244" src="upload/team-1.png" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-team-name">Big Slam</span><span class="bigslam-sp-event-result"><a href="#">VS</a></span><span class="bigslam-sp-team-name">Oklahoma</span><span class="bigslam-sp-team-logo"><img width="200" height="171" src="upload/team-7.png" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span></div>
-                                                        <div class="bigslam-sp-event-featured-info"><span class="bigslam-sp-event-date">April 5, 2023</span><span class="bigslam-sp-event-venue"><a href="#" rel="tag">Boston Celtics Arena</a></span>
-                                                            <a class="bigslam-sp-event-link" href="#">
-                                                                <div class="dashicons dashicons-video-alt"></div>Preview<i class="fa fa-long-arrow-right"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bigslam-sp-event-featured-list clearfix">
-                                                        <div class="bigslam-sp-event-featured-title bigslam-title-font"><span class="bigslam-sp-team-logo"><img width="200" height="244" src="upload/team-1.png" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-team-name">Big Slam</span><span class="bigslam-sp-event-result"><a href="#">VS</a></span><span class="bigslam-sp-team-name">Miami Heat</span><span class="bigslam-sp-team-logo"><img width="200" height="217" src="upload/team-10.png" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span></div>
-                                                        <div class="bigslam-sp-event-featured-info"><span class="bigslam-sp-event-date">March 10, 2022</span><span class="bigslam-sp-event-venue"><a href="#" rel="tag">New Yorkers Stadium</a></span>
-                                                            <a class="bigslam-sp-event-link" href="#">
-                                                                <div class="dashicons dashicons-video-alt"></div>Preview<i class="fa fa-long-arrow-right"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bigslam-sp-event-featured-list clearfix">
-                                                        <div class="bigslam-sp-event-featured-title bigslam-title-font"><span class="bigslam-sp-team-name">Big Slam</span><span class="bigslam-sp-team-logo"><img width="200" height="244" src="upload/team-1.png" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-event-result"><a href="#">78<span class="bigslam-sp-event-result-sep"> - </span>97</a>
-                                                            </span><span class="bigslam-sp-team-logo"><img width="200" height="219" src="upload/team-8.png" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-team-name">New Yorkers</span></div>
-                                                        <div class="bigslam-sp-event-featured-info"><span class="bigslam-sp-event-date">April 8, 2017</span><span class="bigslam-sp-event-venue"><a href="#" rel="tag">Chicago Bulls Arena</a></span>
-                                                            <a class="bigslam-sp-event-link" href="#">
-                                                                <div class="dashicons dashicons-video-alt"></div>Recap<i class="fa fa-long-arrow-right"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bigslam-sp-event-featured-list clearfix">
-                                                        <div class="bigslam-sp-event-featured-title bigslam-title-font"><span class="bigslam-sp-team-name">Big Slam</span><span class="bigslam-sp-team-logo"><img width="200" height="244" src="upload/team-1.png" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-event-result"><a href="#">71<span class="bigslam-sp-event-result-sep"> - </span>70</a>
-                                                            </span><span class="bigslam-sp-team-logo"><img width="200" height="217" src="upload/team-10.png" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-team-name">Miami Heat</span></div>
-                                                        <div class="bigslam-sp-event-featured-info"><span class="bigslam-sp-event-date">April 5, 2017</span><span class="bigslam-sp-event-venue"><a href="#" rel="tag">Chicago Bulls Arena</a></span>
-                                                            <a class="bigslam-sp-event-link" href="#">
-                                                                <div class="dashicons dashicons-video-alt"></div>Recap<i class="fa fa-long-arrow-right"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bigslam-sp-event-featured-list clearfix">
-                                                        <div class="bigslam-sp-event-featured-title bigslam-title-font"><span class="bigslam-sp-team-name">Los Angeles</span><span class="bigslam-sp-team-logo"><img width="200" height="198" src="upload/team-6.png" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-event-result"><a href="#">74<span class="bigslam-sp-event-result-sep"> - </span>70</a>
-                                                            </span><span class="bigslam-sp-team-logo"><img width="200" height="244" src="upload/team-1.png" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-team-name">Big Slam</span></div>
-                                                        <div class="bigslam-sp-event-featured-info"><span class="bigslam-sp-event-date">March 18, 2017</span><span class="bigslam-sp-event-venue"><a href="#" rel="tag">Houston House</a></span>
-                                                            <a class="bigslam-sp-event-link" href="#">
-                                                                <div class="dashicons dashicons-video-alt"></div>Recap<i class="fa fa-long-arrow-right"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bigslam-sp-event-featured-list clearfix">
-                                                        <div class="bigslam-sp-event-featured-title bigslam-title-font"><span class="bigslam-sp-team-name">Houston</span><span class="bigslam-sp-team-logo"><img width="200" height="180" src="upload/team-5.png" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-event-result"><a href="#">68<span class="bigslam-sp-event-result-sep"> - </span>90</a>
-                                                            </span><span class="bigslam-sp-team-logo"><img width="200" height="244" src="upload/team-1.png" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-team-name">Big Slam</span></div>
-                                                        <div class="bigslam-sp-event-featured-info"><span class="bigslam-sp-event-date">March 5, 2017</span><span class="bigslam-sp-event-venue"><a href="#" rel="tag">Houston House</a></span>
-                                                            <a class="bigslam-sp-event-link" href="#">
-                                                                <div class="dashicons dashicons-video-alt"></div>Recap<i class="fa fa-long-arrow-right"></i></a>
-                                                        </div>
-                                                    </div>
+                                                    {% endfor %}
+
+                                                    
                                                 </div>
                                             </div>
                                         </div>
