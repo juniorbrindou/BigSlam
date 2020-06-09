@@ -35,7 +35,7 @@
                                                     {% for pivot in pivots %}
                                                         <dl class='gallery-item'>
                                                             <dt class='gallery-icon portrait'>
-                                                                <a href="#">
+                                                                <a href=" {% url 'joueur:single' %}">
                                                                     <img width="300" height="300" src="{{pivot.photo.url}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="joueur" >
                                                                 </a>
                                                             </dt>
@@ -57,7 +57,7 @@
                                                             
                                                         <dl class='gallery-item'>
                                                             <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{{meneur.photo}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="{{meneur.position}}" ></a></dt>
-                                                            <a href="#">
+                                                            <a href="{% url 'joueur:single' %}">
                                                                 <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>{{meneur.maillot}}</strong>{{meneur.nom}}</dd>
                                                             </a>
                                                         </dl>
@@ -67,57 +67,35 @@
                                                 <div class="sp-template sp-template-player-gallery sp-template-gallery">
                                                     <div class="sp-player-gallery-wrapper sp-gallery-wrapper">
                                                         <a name="group-2-forward" id="group-2-forward"></a>
-                                                        <h4 class="sp-gallery-group-name player-group-name player-gallery-group-name">Forward</h4>
+                                                        <h4 class="sp-gallery-group-name player-group-name player-gallery-group-name">Aillier</h4>
+                                                       {% for ailier in ailiers %}
+                                                            
                                                         <dl class='gallery-item'>
-                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{% static 'upload/player-1-300x300.jpg' %}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="" ></a></dt>
-                                                            <a href="#">
-                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>23</strong> Michael Jorden</dd>
+                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{{ailier.photo}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="{{ailier.position}}" ></a></dt>
+                                                            <a href="{% url 'joueur:single' %}">
+                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>{{ailier.maillot}}</strong>{{ailier.nom}}</dd>
                                                             </a>
                                                         </dl>
-                                                        <dl class='gallery-item'>
-                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{% static 'upload/player-2-300x300.jpg' %}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="" ></a></dt>
-                                                            <a href="#">
-                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>14</strong> Paul Frank</dd>
-                                                            </a>
-                                                        </dl>
-                                                        <dl class='gallery-item'>
-                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{% static 'upload/player-10-300x300.jpg' %}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="" ></a></dt>
-                                                            <a href="#">
-                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>29</strong> Vince Carter</dd>
-                                                            </a>
-                                                        </dl>
+                                                        {% endfor %}
                                                     </div>
                                                 </div>
                                                 <div class="sp-template sp-template-player-gallery sp-template-gallery">
                                                     <div class="sp-player-gallery-wrapper sp-gallery-wrapper">
                                                         <a name="group-3-forward-center" id="group-3-forward-center"></a>
-                                                        <h4 class="sp-gallery-group-name player-group-name player-gallery-group-name">Forward-Center</h4>
+                                                        <h4 class="sp-gallery-group-name player-group-name player-gallery-group-name">Arrière</h4>
+                                                        {% for arriere in arrieres %}
+                                                            
                                                         <dl class='gallery-item'>
-                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{% static 'upload/player-6-300x300.jpg' %}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="" ></a></dt>
-                                                            <a href="#">
-                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>05</strong> James Harden</dd>
+                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{{arriere.photo}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="{{arriere.position}}" ></a></dt>
+                                                            <a href="{% url 'joueur:single' %}">
+                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>{{arriere.maillot}}</strong>{{arriere.nom}}</dd>
                                                             </a>
                                                         </dl>
+                                                        {% endfor %}
+                                                        
                                                     </div>
                                                 </div>
-                                                <div class="sp-template sp-template-player-gallery sp-template-gallery">
-                                                    <div class="sp-player-gallery-wrapper sp-gallery-wrapper">
-                                                        <a name="group-4-center" id="group-4-center"></a>
-                                                        <h4 class="sp-gallery-group-name player-group-name player-gallery-group-name">Center</h4>
-                                                        <dl class='gallery-item'>
-                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{% static 'upload/player-3-300x300.jpg' %}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="" ></a></dt>
-                                                            <a href="#">
-                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>3</strong> Ricardo Spacey</dd>
-                                                            </a>
-                                                        </dl>
-                                                        <dl class='gallery-item'>
-                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{% static 'upload/player-5-300x300.jpg' %}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="" ></a></dt>
-                                                            <a href="#">
-                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>43</strong> Kevin Durant</dd>
-                                                            </a>
-                                                        </dl>
-                                                    </div>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                     </div>

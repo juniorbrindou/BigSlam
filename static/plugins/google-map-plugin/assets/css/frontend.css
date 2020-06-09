@@ -461,7 +461,6 @@ span.wpgmp_nearby_distance {
 }
 
 .wpgmp_direction_container span.wpgmp_mcurrent_loction {
-    background: url(../images/nav.png) no-repeat;
     display: inline-block;
     height: 25px;
     cursor: pointer!important;
@@ -506,7 +505,6 @@ span.wpgmp_nearby_distance {
 }
 
 .wpgmp_nearby_container span.wpgmp_mcurrent_loction {
-    background: url(../images/nav.png) no-repeat;
     display: inline-block;
     height: 25px;
     cursor: pointer!important;
@@ -866,7 +864,6 @@ div.wpgmp_infowindow {
 }
 
 .wpgmp_toggle_main_container span.wpgmp_mcurrent_loction {
-    background: url(../images/nav.png) no-repeat;
     display: inline-block;
     height: 25px;
     cursor: pointer!important;

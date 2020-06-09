@@ -210,7 +210,6 @@ p.quform-description {
 .quform-captcha-inner {
 	position: relative;
 	float: left;
-	background: url(../images/captcha-refresh-icon.png) no-repeat center center;
 }
 .quform-captcha-inner img {
 	max-width: 100%;
@@ -470,7 +469,6 @@ p.quform-group-description {
 	width: 30px;
 	height: 10px;
 	text-indent: -9999px;
-	background: transparent url('../images/default-loading.gif') no-repeat center center;
 }
 
 /*Errors*/
@@ -485,7 +483,6 @@ p.quform-group-description {
 	padding: 3px 10px 3px 25px;
 	margin: 0;
 	line-height: 16px;
-	background: #F3CAC7 url('../images/error.png') no-repeat 3px center;
 	color: #000;
 	font-size: 12px;
 	font-weight: normal;
@@ -499,7 +496,6 @@ p.quform-group-description {
 
 /*Success message*/
 .quform-success-message, .quform-outer-no-js .quform-success-message {
-	background: #cef4a9 url('../images/success.png') no-repeat 14px center;
 	padding: 8px 20px 8px 45px;
 	line-height: 18px;
 	margin: 10px 0;
@@ -524,7 +520,6 @@ p.quform-group-description {
 .quform-tooltip-icon {
 	width: 15px;
 	height: 15px;
-	background: url('../images/help-icon.png') no-repeat right bottom;
 	display: inline-block;
 	cursor: pointer;
 }
@@ -622,7 +617,6 @@ p.quform-group-description {
 	float: left;
 }
 .quform-outer a.quform-cancel-button {
-	background-image: url('../images/close.png');
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	float: left;

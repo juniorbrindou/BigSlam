@@ -7,7 +7,7 @@ from . import models
 def index(request):
 
 	data = {
-		'team' : models.Equipe.objects.all()
+		'team' : models.Equipe.objects.first()
 	}
 
 	return render(request,'pages/big-slam.html', data)

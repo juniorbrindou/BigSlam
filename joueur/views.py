@@ -9,8 +9,8 @@ def index(request):
 
 	'joueurs' : models.Joueur.objects.all(),
 	'pivots' : models.Joueur.objects.filter(position=3),
-	'arriere' : models.Joueur.objects.filter(position=4),
-	'ailier' : models.Joueur.objects.filter(position=2),
+	'arrieres' : models.Joueur.objects.filter(position=4),
+	'ailiers' : models.Joueur.objects.filter(position=2),
 	'meneurs' : models.Joueur.objects.filter(position=1),
 
 	}
