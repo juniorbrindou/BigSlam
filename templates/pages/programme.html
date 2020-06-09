@@ -26,26 +26,12 @@
                                             <div class="sp-template sp-template-event-list">
                                                 <div class="bigslam-sp-event-featured-holder clearfix">
 
-                                                    <div class="bigslam-sp-event-featured-top bigslam-status-vs">
-                                                       
-                                                        <div class="bigslam-sp-event-featured-title bigslam-title-font clearfix">
-                                                            <div class="bigslam-sp-event-featured-title-left"><span class="bigslam-sp-team-logo"><img width="200" height="244" src="{% static 'upload/team-1.png' %} " class="'attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-team-name">boston</span></div><span class="bigslam-sp-event-result"><a href="#">VS</a></span>
-                                                            <div class="bigslam-sp-event-featured-title-right"><span class="bigslam-sp-team-logo"><img width="200" height="180" src="{% static 'upload/team-5.png' %}" class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-team-name">Houston</span></div>
-                                                        </div>
-
-                                                        <div class="bigslam-sp-event-featured-info"><span class="bigslam-sp-event-date">April 6, 2025</span><span class="bigslam-sp-event-venue"><a href="#" rel="tag">Houston House</a></span></div>
-                                                        <div class="bigslam-sp-event-featured-link">
-                                                            <a class="bigslam-sp-event-link" href="#">
-                                                                <div class="dashicons dashicons-video-alt"></div>Preview<i class="fa fa-long-arrow-right"></i></a>
-                                                        </div>
-                                                    </div>
+                                                   
                                                     {% for rencontre in rencontres %}
                                                         
                                                     <div class="bigslam-sp-event-featured-list clearfix">
-                                                        <div class="bigslam-sp-event-featured-title bigslam-title-font"><span class="bigslam-sp-team-logo"><img width="200" height="219" src="{% static 'upload/team-8.png' %} " class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span><span class="bigslam-sp-team-name">BigSlam</span><span class="bigslam-sp-event-result"><a href="#">VS</a></span><span class="bigslam-sp-team-name">{{rencontre.adversaire}}</span><span class="bigslam-sp-team-logo"><img width="200" height="244" src="{% static 'upload/team-1.png' %} " class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" ></span></div>
+                                                        <div class="bigslam-sp-event-featured-title bigslam-title-font"><span class="bigslam-sp-team-name">BigSlam</span><span class="bigslam-sp-event-result"><a href="#">VS</a></span><span class="bigslam-sp-team-name">{{rencontre.adversaire}}</span></div>
                                                         <div class="bigslam-sp-event-featured-info"><span class="bigslam-sp-event-date">{{rencontre.date_start}}</span><span class="bigslam-sp-event-venue"><a href="#" rel="tag">{{rencontre.stade}}</a></span>
-                                                            <a class="bigslam-sp-event-link" href="#">
-                                                                <div class="dashicons dashicons-video-alt"></div>{{rencontre.has_played}}<i class="fa fa-long-arrow-right"></i></a>
                                                         </div>
                                                     </div>
                                                     {% endfor %}

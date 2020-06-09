@@ -26,7 +26,7 @@ class Game(models.Model):
 
 class Adversaire(models.Model):
 	equipe = models.CharField(max_length=255)
-	logo = models.ImageField(upload_to = 'static/images/aversaires-logo/',null=True, blank=True)
+	logo = models.ImageField(upload_to = 'game/logo/',null=True, blank=True)
 	nationnalite = models.CharField(max_length=255)
 	stade = models.CharField(max_length=255)
 	date_add = models.DateTimeField(auto_now_add=True)

@@ -9,6 +9,7 @@ class EquipeAdmin(admin.ModelAdmin):
 	'nationnalite',
 	'stade',
 	'coach',
+	'logo',
 	'date_add',
 	'date_upd',
 	)

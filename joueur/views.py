@@ -14,11 +14,3 @@ def index(request):
 	'meneurs' : models.Joueur.objects.filter(position=1),
 	}
 	return render(request,'pages/players.html',data)
-
-def single(request, id):
-	joueur = models.Joueur.objects.get(id=id)
-	data = {
-		'joueur':joueur,
-	}
-
-	return render(request,'pages/player.html',data)
