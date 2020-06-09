@@ -1,1 +1,0 @@
-web: gunicorn BigSlam.wsgi --log-file - --timeout 180
