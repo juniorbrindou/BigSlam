@@ -26,7 +26,7 @@ SECRET_KEY = 'eu19%(-r*+@bhc3$nk)@@*nl46ni$jk%l71q+t=um$*srsaomm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bigslam-nan.herokuapp.com']
 
 
 # Application definition
