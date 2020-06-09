@@ -83,12 +83,27 @@ WSGI_APPLICATION = 'BigSlam.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dfel3t3rsspf4v',
+        'USER': 'esrdpttwvxltaj',
+        'PASSWORD': '19750527398000eee7d13320563ce773ac958565d77290a23e8061575de9e778',
+        'HOST': 'ec2-54-247-169-129.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432',
+
     }
 }
+
+
+
 
 
 # Password validation
@@ -145,4 +160,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static_cdn")
 MEDIA_ROOT = os.path.join(BASE_DIR, "media_cdn")
 
 # Configure Django App for Heroku.
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
