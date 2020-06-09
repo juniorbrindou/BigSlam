@@ -16,5 +16,5 @@ def index(request):
 	}
 	return render(request,'pages/players.html',data)
 
-def single(request):
+def single(request,id):
 	return render(request,'pages/player.html')

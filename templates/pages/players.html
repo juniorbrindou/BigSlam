@@ -56,7 +56,7 @@
                                                         {% for meneur in meneurs %}
                                                             
                                                         <dl class='gallery-item'>
-                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{{meneur.photo}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="{{meneur.position}}" ></a></dt>
+                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{{meneur.photo.url}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="{{meneur.position}}" ></a></dt>
                                                             <a href="{% url 'joueur:single' %}">
                                                                 <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>{{meneur.maillot}}</strong>{{meneur.nom}}</dd>
                                                             </a>
@@ -71,7 +71,7 @@
                                                        {% for ailier in ailiers %}
                                                             
                                                         <dl class='gallery-item'>
-                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{{ailier.photo}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="{{ailier.position}}" ></a></dt>
+                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{{ailier.photo.url}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="{{ailier.position}}" ></a></dt>
                                                             <a href="{% url 'joueur:single' %}">
                                                                 <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>{{ailier.maillot}}</strong>{{ailier.nom}}</dd>
                                                             </a>
@@ -86,7 +86,7 @@
                                                         {% for arriere in arrieres %}
                                                             
                                                         <dl class='gallery-item'>
-                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{{arriere.photo}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="{{arriere.position}}" ></a></dt>
+                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{{arriere.photo.url}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="{{arriere.position}}" ></a></dt>
                                                             <a href="{% url 'joueur:single' %}">
                                                                 <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>{{arriere.maillot}}</strong>{{arriere.nom}}</dd>
                                                             </a>
