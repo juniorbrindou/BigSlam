@@ -11,7 +11,7 @@
                 <div class="bigslam-page-title-overlay"></div>
                 <div class="bigslam-page-title-container bigslam-container">
                     <div class="bigslam-page-title-content bigslam-item-pdlr">
-                        <h1 class="bigslam-page-title">DÉTAILS DU JOUEUR</h1></div>
+                        <h1 class="bigslam-page-title">{{joueur.nom}}</h1></div>
                 </div>
             </div>
             <div class="bigslam-page-wrapper" id="bigslam-page-wrapper">
@@ -24,7 +24,7 @@
                                         <div class="gdlr-core-pbf-element">
                                             <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr">
                                                 <div class="gdlr-core-title-item-title-wrap ">
-                                                    <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 26px ;">James Harden<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
+                                                    <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 26px ;">{{joueur.nom}}<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
                                             </div>
                                         </div>
                                         <div class="gdlr-core-pbf-element">
@@ -35,15 +35,20 @@
                                                             <img width="213" height="300" src="{% static 'upload/player-6-213x300.jpg' %} " class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image" alt="" > </div>
                                                         <div class="sp-template sp-template-player-details sp-template-details">
                                                             <div class="sp-list-wrapper">
-                                                                <dl class="sp-player-details"><dt>#</dt>
-                                                                    <dd>05</dd><dt>Name</dt>
-                                                                    <dd>James Harden</dd><dt>Nationality</dt>
-                                                                    <dd><img src="plugins/sportspress/assets/images/flags/svk.png" alt="svk"> Slovakia</dd><dt>Position</dt>
-                                                                    <dd>Forward-Center</dd><dt>Height</dt>
-                                                                    <dd>6"11</dd><dt>Weight</dt>
-                                                                    <dd>270</dd><dt>Current Team</dt>
-                                                                    <dd>Big Slam</dd><dt>Past Teams</dt>
-                                                                    <dd>Big Slam</dd>
+                                                                <dl class="sp-player-details">
+                                                                    <dt>#</dt>
+                                                                        <dd>{{joueur.maillot}}</dd>
+                                                                    <dt>Name</dt>
+                                                                        <dd>{{joueur.nom}}</dd>
+                                                                        <dd><img src="{{joueur.photo.url}}" width="300" height="300" alt="svk"></dd>
+                                                                    <dt>Origne</dt>
+                                                                        <dd>{{joueur.nationnalite}}</dd>
+                                                                    <dt>Position</dt>
+                                                                        <dd>{{joueur.position}}</dd>
+                                                                    <dt>Taille</dt>
+                                                                        <dd>{{joueur.taille}} Cm</dd>
+                                                                    <dt>Weight</dt>
+                                                                        <dd>{{joueur.masse}} Kg</dd>
                                                                 </dl>
                                                             </div>
                                                         </div>

@@ -10,5 +10,5 @@ urlpatterns = [
     path('', views.index, name='home'),
 
     # un joueur player details
-    path('single', views.single, name ='single'),
+    path('single/<int:id>/', views.single, name ='single'),
 ]

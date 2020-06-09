@@ -39,7 +39,7 @@
                                                                     <img width="300" height="300" src="{{pivot.photo.url}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="joueur" >
                                                                 </a>
                                                             </dt>
-                                                            <a href="{% url 'joueur:single'%}">
+                                                            <a href="{% url 'joueur:single' id=1  %}">
                                                                 <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>{{pivot.maillot}}</strong>{{pivot.nom}} </dd>
                                                             </a>
                                                         </dl>
@@ -49,52 +49,7 @@
                                                 </div>
 
 
-                                                <div class="sp-template sp-template-player-gallery sp-template-gallery">
-                                                    <div class="sp-player-gallery-wrapper sp-gallery-wrapper">
-                                                        <a name="group-1-forward-guard" id="group-1-forward-guard"></a>
-                                                        <h4 class="sp-gallery-group-name player-group-name player-gallery-group-name">Meneur</h4>
-                                                        {% for meneur in meneurs %}
-                                                            
-                                                        <dl class='gallery-item'>
-                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{{meneur.photo.url}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="{{meneur.position}}" ></a></dt>
-                                                            <a href="{% url 'joueur:single' %}">
-                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>{{meneur.maillot}}</strong>{{meneur.nom}}</dd>
-                                                            </a>
-                                                        </dl>
-                                                        {% endfor %}
-                                                    </div>
-                                                </div>
-                                                <div class="sp-template sp-template-player-gallery sp-template-gallery">
-                                                    <div class="sp-player-gallery-wrapper sp-gallery-wrapper">
-                                                        <a name="group-2-forward" id="group-2-forward"></a>
-                                                        <h4 class="sp-gallery-group-name player-group-name player-gallery-group-name">Aillier</h4>
-                                                       {% for ailier in ailiers %}
-                                                            
-                                                        <dl class='gallery-item'>
-                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{{ailier.photo.url}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="{{ailier.position}}" ></a></dt>
-                                                            <a href="{% url 'joueur:single' %}">
-                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>{{ailier.maillot}}</strong>{{ailier.nom}}</dd>
-                                                            </a>
-                                                        </dl>
-                                                        {% endfor %}
-                                                    </div>
-                                                </div>
-                                                <div class="sp-template sp-template-player-gallery sp-template-gallery">
-                                                    <div class="sp-player-gallery-wrapper sp-gallery-wrapper">
-                                                        <a name="group-3-forward-center" id="group-3-forward-center"></a>
-                                                        <h4 class="sp-gallery-group-name player-group-name player-gallery-group-name">Arrière</h4>
-                                                        {% for arriere in arrieres %}
-                                                            
-                                                        <dl class='gallery-item'>
-                                                            <dt class='gallery-icon portrait'><a href="#"><img width="300" height="300" src="{{arriere.photo.url}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" alt="{{arriere.position}}" ></a></dt>
-                                                            <a href="{% url 'joueur:single' %}">
-                                                                <dd class="wp-caption-text gallery-caption small-3 columns has-number"><strong>{{arriere.maillot}}</strong>{{arriere.nom}}</dd>
-                                                            </a>
-                                                        </dl>
-                                                        {% endfor %}
-                                                        
-                                                    </div>
-                                                </div>
+                                               
                                                
                                             </div>
                                         </div>
